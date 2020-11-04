@@ -35,3 +35,9 @@ print(name)
 print(name.lstrip())
 print(name.rstrip())
 
+"""
+字符串模板使用
+"""
+from string import Template
+tmpl = Template("Hello, $who! $what enough for ya?")
+tmpl.substitute(who="Mars", what="Dusty")

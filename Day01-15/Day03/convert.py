@@ -16,3 +16,8 @@ elif unit == 'cm' or unit == '厘米':
 	print('%f厘米 = %f英寸' % (value, value / 2.54))
 else:
 	print('请输入有效的单位')
+
+
+
+
+
