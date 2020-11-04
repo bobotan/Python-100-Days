@@ -28,3 +28,10 @@ print('{:0=30}'.format(11))  # 还有“=”只能应用于数字，这种方法
 points=19
 total=22
 print('Correct answers: {:.2%}'.format(points/total))
+
+
+name='      fuck\t\ngongyuheng    '
+print(name)
+print(name.lstrip())
+print(name.rstrip())
+
