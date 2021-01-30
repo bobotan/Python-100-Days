@@ -14,7 +14,20 @@
 
 # 列表
 
-list1=[1,3,5,7,100]
-print(list1)
-list2=['fuck']*5
-print(list2)
+# list1=[1,3,5,7,100]
+# print(list1)
+# list2=['fuck']*5
+# print(list2)
+# print(list2[2])
+# list2.append('you')
+# print(list2)
+
+
+fruits = ['grape', 'apple', 'strawberry', 'waxberry']
+fruits += ['pitaya', 'pear', 'mango']
+for fruit in fruits:
+    print(fruit.title(),end=' ')
+print()
+
+fruits3=fruits[:]
+print(fruits3)
