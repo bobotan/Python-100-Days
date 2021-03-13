@@ -4,7 +4,6 @@ from random import *
 
 class Fighter(object, metaclass=ABCMeta):
     __slots__ = ('_name', '_hp')
-
     def __init__(self, name, hp):
         self._name = name
         self._hp = hp
