@@ -63,15 +63,17 @@ class Ultraman(Fighter):
 
                :return: 使用成功返回True否则返回False
          """
+
+        
         if self._mp >= 50:
             self._mp = 50
             injury = other.hp * 3 // 4
             injury = injury if injury >= 50 else 50
             other.hp -= injury
-            return True
+            return (True,injury)
         else:
             self.attack(other)
-            return False
+            return (False,0)
 
     def magic_attack(self, others):
         """
@@ -164,8 +166,9 @@ if __name__ == "__main__":
             else:
                 print('%s使用魔法失败.' % u.name)
         else:
-            if u.huge_attack(m):
-                print('%s使用究极必杀技虐了%s.' % (u.name, m.name))
+            (isaffect,depoint)=u.huge_attack(m)
+            if isaffect:
+                print('%s使用究极必杀技虐了%s. 暴击伤害%d' % (u.name, m.name,depoint))
             else:
                 print('%s使用普通攻击打了%s.' % (u.name, m.name))
                 print('%s的魔法值恢复了%d点.' % (u.name, u.resume()))
