@@ -10,7 +10,7 @@ Date: 2018-03-13
 
 import csv
 
-filename = 'example.csv'
+filename = 'Day01-15\Day11\example.csv'
 
 try:
 	with open(filename) as f:
