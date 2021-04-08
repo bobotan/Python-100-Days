@@ -34,6 +34,6 @@ class Persion():
 if __name__ == '__main__':
     if (Persion.is_valid('12')):
         persion = Persion('wangdachu', 17)
-        persion._name = 'bobotan'
-        persion._age = 12
+        persion.name = 'bobotan'
+        persion.age = 12
         persion.play()

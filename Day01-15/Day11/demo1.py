@@ -1,8 +1,10 @@
 import os
+
+
 def main():
-    f=None
+    f = None
     try:
-        f = open('Day01-15\Day11\致橡树.txt', 'r', encoding='utf-8')
+        f = open(r'Day01-15\Day11\致橡树.txt', 'r', encoding='utf-8')
         print(f.read())
     except FileNotFoundError:
         print('无法打开指定的文件!')
@@ -14,7 +16,8 @@ def main():
         if f:
             f.close()
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
 
     print(os.getcwd())
     main()
