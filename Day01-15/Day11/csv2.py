@@ -12,7 +12,7 @@ import csv
 
 
 class Teacher(object):
-	def __init__(self, name, age, title):
+    def __init__(self, name, age, title):
 		self.__name = name
 		self.__age = age
 		self.__title = title
