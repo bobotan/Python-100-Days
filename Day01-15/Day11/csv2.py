@@ -38,7 +38,9 @@ try:
 	with open(filename, 'w') as f:
 		writer = csv.writer(f)
 		for teacher in teachers:
+			
 			writer.writerow([teacher.name, teacher.age, teacher.title])
+			writer.
 except BaseException as e:
 	print('无法写入文件:', filename)
 else:
