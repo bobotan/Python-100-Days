@@ -1,4 +1,5 @@
 class MusicPlayer(object):
+    instance = None
     def __init__(self):
         print('初始化__init__')
 
@@ -6,10 +7,15 @@ class MusicPlayer(object):
         # 1.创建对象时，__new__方法会被自动调用
         print('创建对象，初始化化空间')
 
-        # 2.为对象分配空间
-        instance = super().__new__(cls)
+        if cls.instance is None:
+            # 2.为对象分配空间
+            cls.instance = super().__new__(cls)
         # 3.返回对象的引用
-        return instance
+        return cls.instance
 
 
 cls = MusicPlayer()
+print(cls)
+cls2=MusicPlayer()
+print(cls2)
+
